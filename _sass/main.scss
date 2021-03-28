@@ -25,6 +25,12 @@ body {
   font-size: 10rem;
 }
 
+@media only screen and (max-width: 800px) {
+  .container {
+    font-size: 6rem;
+  }
+}
+
 h1 {
   margin: 1rem;
 }
