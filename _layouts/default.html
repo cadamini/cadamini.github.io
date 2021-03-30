@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <title>Hike. - Hello World</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
   </head>
   <body>
+    {% include nav.html %}
     <div class="container">
-      {{ content }}
+      <h1>Hike.</h1>
     </div>
+      {{ content }}
   </body>
 </html>

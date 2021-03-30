@@ -1,8 +1,7 @@
 ---
 layout: default
-title: "Hike."
 ---
 
-# Hike.
+> "a long walk or walking tour."
 
-Start today.
+> "Hiking is a long, vigorous walk, usually on trails or footpaths in the countryside." [https://en.wikipedia.org/wiki/Hiking](https://en.wikipedia.org/wiki/Hiking)

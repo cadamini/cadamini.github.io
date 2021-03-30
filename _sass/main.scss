@@ -5,37 +5,85 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100%;
+}
+
+html, body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.red {
+  border-radius: 10px 10px 10px 10px;
+  color: white;
+  padding: 2rem;
+  p {
+    line-height: 1.6;
+  }
+}
+
+a {
+  color: white;
 }
 
 body {
-  margin: 0;
-  color: #white;
   font-family: 'Dancing', sans-serif;
+  height: 100%;
+  color: white;
+  p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  text-align: center;
+  margin: 2rem;
+  p {
+    font-size: 2rem;
+  }
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.container {
-  position: absolute;
-  margin: 0 auto;
-  top: 10%;
-  color: white;
-  font-size: 10rem;
-}
-
-@media only screen and (max-width: 800px) {
-  .container {
-    font-size: 4rem;
-  }
+.container-bg-black {
+  background: white;
+  color: black;
+  font-weight: 700;
 }
 
 h1 {
-  margin: 1rem;
+  color: white;
+  font-size: 18rem;
 }
 
-p {
-  font-size: 3rem;
-  text-align: center;
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+
+.main-navigation {
+  background: white;
+  font-weight: 700;
+  color: black;
+  a {
+    color: black;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+    padding: 1rem;
+  }
 }
