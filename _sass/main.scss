@@ -32,7 +32,7 @@ body {
   color: white;
   p {
     font-size: 1rem;
-    padding: 1rem;
+    // padding: 1rem;
   }
 }
 
@@ -72,6 +72,9 @@ h1 {
 .main-navigation {
   background: white;
   font-weight: 700;
+  position: absolute;
+  height: 50px;
+  width: 100%;
   color: black;
   a {
     color: black;
@@ -86,4 +89,22 @@ h1 {
     list-style: none;
     padding: 1rem;
   }
+}
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.quote-item {
+  padding: 1em;
+  margin: 1em;
+  width: 30%;
+  height: 100%;
+  line-height: 1.6;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
 }
