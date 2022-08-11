@@ -13,15 +13,6 @@ html, body, ul {
   padding: 0;
 }
 
-.red {
-  border-radius: 10px 10px 10px 10px;
-  color: white;
-  padding: 2rem;
-  p {
-    line-height: 1.6;
-  }
-}
-
 a {
   color: white;
 }
@@ -38,10 +29,7 @@ body {
 blockquote {
   font-style: italic;
   text-align: center;
-  margin: 2rem;
-  p {
-    font-size: 2rem;
-  }
+  p { font-size: 2em; }
 }
 
 .container {
@@ -51,21 +39,9 @@ blockquote {
   flex-direction: column;
 }
 
-.container-bg-black {
-  background: white;
-  color: black;
-  font-weight: 700;
-}
-
 h1 {
   color: white;
   font-size: 18rem;
-}
-
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 7rem;
-  }
 }
 
 .main-navigation {
@@ -90,20 +66,12 @@ h1 {
   }
 }
 
-.quote-container {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  flex-wrap: wrap;
-}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 7rem;
+  }
 
-.quote-item {
-  padding: 1em;
-  margin: 1em;
-  width: 30%;
-  height: 100%;
-  line-height: 1.6;
-  color: white;
-  font-size: 1rem;
-  text-align: center;
+  blockquote {
+    p { font-size: 2em; }
+  }
 }
