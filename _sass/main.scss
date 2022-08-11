@@ -30,6 +30,8 @@ blockquote {
   font-style: italic;
   text-align: center;
   p { font-size: 2em; }
+  span { font-size: 5em; }
+  em { border-bottom: 2px solid white; }
 }
 
 .container {
@@ -37,14 +39,18 @@ blockquote {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
 }
 
 h1 {
   color: white;
-  font-size: 18rem;
+  font-size: 12em;
+  margin: 2rem;
+  -webkit-text-stroke: 2px black;
+  border-bottom: 1px solid white;
 }
 
-.main-navigation {
+.navigation {
   background: white;
   font-weight: 700;
   position: relative;
@@ -63,6 +69,17 @@ h1 {
     display: inline-block;
     list-style: none;
     padding: 1rem;
+  }
+}
+
+.post-content {
+  padding: 2em;
+  background: #656644;
+  margin: 2em;
+  border: 10px solid whitesmoke;
+  border-radius: 25px;
+  h1 {
+    font-size: 2em;
   }
 }
 

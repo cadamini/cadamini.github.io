@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="container">
+  <h1>Hike.</h1>
+  <blockquote>
+    "<b>Hiking<b> is a long, vigorous walk, usually on trails or footpaths in the countryside."
+  </blockquote>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
