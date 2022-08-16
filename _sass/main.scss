@@ -1,39 +1,32 @@
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+body, html, h1 {
   margin: 0;
 }
 
-html {
-  background: url(/assets/images/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+} 
+
+.welcome-text {
+  height: 15vh;
+  background:  rgb(248, 232, 82);
+  padding: 30px;
 }
 
-body {
-  height: 100%;
-  font-family: 'Dancing', sans-serif;
-  color: white;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-blockquote {
-  font-style: italic;
-  text-align: center;
-  p { font-size: 2em; }
-  span { font-size: 5em; }
+.section {
+  background-image: url(/assets/images/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg);
+  background-color: #cccccc;
+  height: 80vh;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  width: 100vw;
+  h1 { 
+    font-size: 4em;
+    padding: 50px 0 0 50px;
+    color: white; 
+  }
 }
 
 .container {
@@ -41,15 +34,24 @@ blockquote {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100%;
-}
 
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 7rem;
-  }
-
-  blockquote {
-    p { font-size: 2em; }
+  blockquote, h1 {
+    margin: 50% auto;
   }
 }
+
+.container > div {
+  background: RGBA(0,0,0,0.50);
+  border: 2px solid rgb(248, 232, 82);
+  color: white;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+  h1 { 
+    margin: 40% auto;
+    font-size: 4em; }
+}
+
+/* @media only screen and (max-width: 600px) {
+} */
