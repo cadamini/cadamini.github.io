@@ -31,9 +31,9 @@ h1 {
 .section-welcome {
   background: $sandy-white;
   text-align: center;
-  padding: 50px 0 50px 0;
+  margin: 50px 0 50px 0;
   color: $light-yellow;
-  width: 100%;
+  width: auto;
 }
 
 .section-forest {
@@ -60,7 +60,7 @@ h1 {
   background-color: #757d65;
   color: white;
   height: 15vh;
-  padding: 70px 0 0 0;
+  margin: 50px;
   text-align: center;
   width: 100%;
 }
