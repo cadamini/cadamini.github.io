@@ -40,15 +40,26 @@ h1 {
   border-bottom: 4px solid gold;
 }
 
-.section-header {
+.section-green {
   background-color: #757d65;
   color: white;
   height: 15vh;
   padding: 50px;
   text-align: center;
-  h1 {
-    padding: 50px;
-    color: #c9bc5e;
+}
+
+.footer {
+  background-color: #757d65;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  blockquote {
+    font-size: 20px;
+    line-height: 1.25;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -78,12 +89,5 @@ h1 {
   width: 50%;
 }
 
-blockquote {
-  font-size: 20px;
-  line-height: 1.25;
-  padding: 0;
-  text-align: center;
-  font-style: italic;
-  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
-}
+
 
