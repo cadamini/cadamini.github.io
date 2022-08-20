@@ -43,7 +43,6 @@ h1 {
 .section-green {
   background-color: #757d65;
   color: white;
-  height: 15vh;
   padding: 50px;
   text-align: center;
 }
@@ -70,13 +69,6 @@ h1 {
     color: $light-yellow;
     
   } 
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 /* @media only screen and (max-width: 600px) {
