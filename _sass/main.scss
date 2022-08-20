@@ -6,19 +6,34 @@ body, html, h1 {
 }
 
 body {
-  background: #757d65;
+  background: white;
 }
 
-
+.section-subtitle {
+  background: $sandy-white;
+  text-align: center;
+  h1 {
+    color: $light-yellow;
+  }
+  text-align: center;
+}
 h1 { 
   font-size: 1.5em;
 }
 
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
 .section-welcome {
   background: $sandy-white;
   text-align: center;
-  padding: 50px;
+  padding: 50px 0 50px 0;
   color: $light-yellow;
+  width: 100%;
 }
 
 .section-forest {
@@ -27,7 +42,7 @@ h1 {
   background-position: top; 
   background-repeat: no-repeat; 
   background-size: cover; 
-  width: 100vw;
+  width: 100%;
 }
 
 .section-pathway {
@@ -38,19 +53,22 @@ h1 {
   height: 40vh;
   border-top: 4px solid gold;
   border-bottom: 4px solid gold;
+  width: 100%;
 }
 
 .section-green {
   background-color: #757d65;
   color: white;
-  padding: 50px;
+  height: 15vh;
+  padding: 70px 0 0 0;
   text-align: center;
+  width: 100%;
 }
 
 .footer {
   background-color: #757d65;
   color: white;
-  padding: 50px;
+    padding: 50px;
   text-align: center;
   blockquote {
     font-size: 20px;
@@ -62,18 +80,6 @@ h1 {
   }
 }
 
-.section-subtitle {
-  background: $sandy-white;
-  text-align: center;
-  h1 {
-    color: $light-yellow;
-    
-  } 
-}
-
-/* @media only screen and (max-width: 600px) {
-} */
-
 .text {
   display: flex;
   justify-content: center;
@@ -81,5 +87,28 @@ h1 {
   width: 50%;
 }
 
+.section-footpath {
+  background-color: #cccccc;
+}
 
+@media only screen and (min-width: 1024px) {
+  body {
+    width: 70%;
+    margin: 0 auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  body {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  body {
+    width: 40%;
+  }
+}
 
