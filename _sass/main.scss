@@ -31,18 +31,18 @@ h1 {
 .section-welcome {
   background: $sandy-white;
   text-align: center;
-  margin: 50px 0 50px 0;
+  padding: 50px 0 50px 0;
   color: $light-yellow;
   width: auto;
 }
 
-.section-forest {
+.section-header {
   background-image: url(/assets/images/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg);
   height: 15vh;
   background-position: top; 
   background-repeat: no-repeat; 
   background-size: cover; 
-  width: 100%;
+  width: auto;
 }
 
 .section-pathway {
@@ -50,34 +50,38 @@ h1 {
   background-position: top; 
   background-repeat: no-repeat; 
   background-size: cover; 
-  height: 40vh;
+  height: 45vh;
   border-top: 4px solid gold;
   border-bottom: 4px solid gold;
-  width: 100%;
+  width: auto;
 }
 
 .section-green {
   background-color: #757d65;
   color: white;
   height: 15vh;
-  margin: 50px;
+  padding: 50px 0 0 0;
   text-align: center;
-  width: 100%;
+  width: auto;
 }
 
 .footer {
   background-color: #757d65;
   color: white;
-    padding: 50px;
+  padding: 50px;
   text-align: center;
-  blockquote {
-    font-size: 20px;
-    line-height: 1.25;
-    padding: 0;
-    text-align: center;
-    font-style: italic;
-    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+  a {
+    color: white;
   }
+}
+
+blockquote {
+  font-size: 20px;
+  line-height: 1.25;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
 }
 
 .text {
@@ -85,10 +89,6 @@ h1 {
   justify-content: center;
   color: white;
   width: 50%;
-}
-
-.section-footpath {
-  background-color: #cccccc;
 }
 
 @media only screen and (min-width: 1024px) {
