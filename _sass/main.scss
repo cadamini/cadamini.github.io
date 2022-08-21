@@ -9,43 +9,37 @@ body {
   background: white;
 }
 
-.section-subtitle {
-  background: $sandy-white;
-  text-align: center;
-  h1 {
+.nav-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  div {
+    margin: 20px;
+  }
+  .navbar-header {
+    font-size: 2em;
     color: $light-yellow;
   }
-  text-align: center;
-}
-h1 { 
-  font-size: 1.5em;
 }
 
-/* .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
-
-.section-welcome {
+.section-subtitle {
   background: $sandy-white;
-  text-align: center;
-  padding: 50px 0 50px 0;
-  color: $light-yellow;
-  width: auto;
+  height: 15vh;
 }
 
-.section-header {
+.header-image {
   background-image: url(/assets/images/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg);
   height: 15vh;
   background-position: top; 
   background-repeat: no-repeat; 
   background-size: cover; 
+  border-top: 4px solid gold;
+  border-bottom: 4px solid gold;
   width: auto;
 }
 
-.section-pathway {
+.section-image {
   background-image: url(/assets/images/clay-banks-yoqfCYkeJHw-unsplash.jpg);
   background-position: center; 
   background-repeat: no-repeat; 
@@ -56,13 +50,22 @@ h1 {
   width: auto;
 }
 
-.section-green {
-  background-color: #757d65;
-  color: white;
-  text-align: center;
+.content-section {
   width: auto;
   vertical-align: middle;
-  padding: 50px 0 50px 0;
+
+  &--green {
+    background-color: #757d65;
+    color: white;
+    padding: 50px;
+    text-align: center;
+  }
+  &--sand {
+    background-color: $sandy-white;
+    color: black;
+    padding: 50px;
+    text-align: center;
+  }
 }
 
 .footer {
