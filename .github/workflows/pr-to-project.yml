@@ -2,18 +2,16 @@ name: Add pull requests to project board
 
 on:
   pull_request:
-    types: [opened, labeled]
-env:
-  MY_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    types:
+      - [opened, labeled]
+
 jobs:
-  assign_one_project:
+  add-to-project:
+    name: Add issue to project
     runs-on: ubuntu-latest
-    name: Add pull requests to project board
     steps:
-    - name: Add new pull requests
-      uses: srggrs/assign-one-project-github-action@1.2.0
-      if: |
-        github.event.action == 'opened' || contains(github.event.pull_request.labels.*.name, 'bug')
-      with:
-        project: 'https://github.com/users/cadamini/projects/1'
-        column_name: 'New'
+      - uses: actions/add-to-project@0.3.0
+        with:
+          project-url: https://github.com/users/cadamini/projects/1
+          github-token: ${{ secrets.MY_GITHUB_TOKEN }}
+          labeled: bug 
