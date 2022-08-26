@@ -3,7 +3,8 @@ name: Add pull requests to project board
 on:
   pull_request:
     types:
-      - [opened, labeled]
+      - labeled
+      - opened
 
 jobs:
   add-to-project:
