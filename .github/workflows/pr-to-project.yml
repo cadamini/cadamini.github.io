@@ -1,0 +1,21 @@
+name: Add pull requests to project board
+
+on:
+  pull_request_target:
+    types: [opened, labeled]
+
+env:
+  MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+
+jobs:
+  assign_one_project:
+    runs-on: ubuntu-latest
+    name: Add pull requests to project board
+    steps:
+    - name: Add new pull requests
+      uses: srggrs/assign-one-project-github-action@1.2.1
+      if: |
+        github.event.action == 'opened'
+        contains(github.event.pull_request.labels.*.name, 'bug')
+      with:
+        project: 'https://github.com/orgs/ivx/projects/48'
