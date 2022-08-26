@@ -5,7 +5,7 @@ on:
     types: [opened, labeled]
 
 env:
-  MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+  MY_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   assign_one_project:
@@ -15,7 +15,6 @@ jobs:
     - name: Add new pull requests
       uses: srggrs/assign-one-project-github-action@1.2.1
       if: |
-        github.event.action == 'opened'
-        contains(github.event.pull_request.labels.*.name, 'bug')
+        github.event.action == 'opened' || contains(github.event.pull_request.labels.*.name, 'bug')
       with:
-        project: 'https://github.com/orgs/ivx/projects/48'
+        project: 'https://github.com/users/cadamini/projects/1/views/1'
