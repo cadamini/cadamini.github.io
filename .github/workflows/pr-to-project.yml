@@ -17,4 +17,4 @@ jobs:
       if: |
         github.event.action == 'opened' || contains(github.event.pull_request.labels.*.name, 'bug')
       with:
-        project: 'https://github.com/users/cadamini/projects/1/views/1'
+        project: 'https://github.com/users/cadamini/projects/1'
