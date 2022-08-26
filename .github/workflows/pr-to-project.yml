@@ -15,7 +15,6 @@ jobs:
     - name: Add new pull requests
       uses: srggrs/assign-one-project-github-action@1.2.1
       if: |
-        github.event.action == 'opened'
-        contains(github.event.pull_request.labels.*.name, 'bug')
+        github.event.action == 'opened' || contains(github.event.pull_request.labels.*.name, 'bug')
       with:
         project: 'https://github.com/users/cadamini/projects/1/views/1'
