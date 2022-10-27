@@ -20,9 +20,12 @@ layout: index
   <p>Code on <a href="https://github.com/cadamini/cadamini.github.io">github.com/cadamini</a></p>
 </div>
 
+<div style="border:1px solid green">
 ![image1](/assets/images/RegexSyntaxHighlighting.gif)
-
+</div>
+  
+<div style="border:1px solid red">
 ![image2](/assets/images/RegexSyntaxHighlighting1.gif)
-
+</div>
 
 
