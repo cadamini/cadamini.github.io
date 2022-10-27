@@ -21,6 +21,7 @@ layout: index
 </div>
 
 ![image1](/assets/images/RegexSyntaxHighlighting.gif)
+
 ![image2](/assets/images/RegexSyntaxHighlighting1.gif)
 
 
