@@ -1,25 +1,37 @@
 ---
-layout: index
+layout: default
+title: Home
 ---
 
-<nav class="menu" aria-label="Person settings">
-  <a class="menu-item" href="#url" aria-current="page">Account</a>
-  <a class="menu-item" href="#url">Profile</a>
-  <a class="menu-item" href="#url">Emails</a>
-  <a class="menu-item" href="#url">Notifications</a>
-</nav>
+{% if page.url == "/" %}
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
+    </div>
+    <div class="row">
+        {% for post in site.posts %}
+        {% if post.featured == true %}
+        {% include featuredbox.html %}
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
 
-<div class="section-welcome">
-  <blockquote cite="https://en.wikipedia.org/wiki/Hiking">
-    "Hiking.<br>A long, vigorous walk, usually on trails or footpaths in the countryside."<br>(Wikipedia)
-  </blockquote>
+<section class="recent-posts">
+    <div class="section-title">
+        <h2><span>All Stories</span></h2>
+    </div>
+    <div class="row listrecent">
+        {% for post in paginator.posts %}
+        {% include postbox.html %}
+        {% endfor %}
+    </div>
+</section>
+
+<div class="bottompagination">
+    <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+    <span class="navigation" role="navigation">
+        {% include pagination.html %}
+    </span>
 </div>
-
-<div class="footer">
-  <p>Images from <a href="https://unsplash.com">unsplash.com</a> </p>
-  <p>Code on <a href="https://github.com/cadamini/cadamini.github.io">github.com/cadamini</a></p>
-</div>
-
-
-
-
