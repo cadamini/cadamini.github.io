@@ -1,8 +1,11 @@
-# Mediumish - Jekyll Theme
+# My personal blog
 
-[Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/template-mediumish-bootstrap-jekyll/)
+Work in progress. At the moment, I am updating the template to my needs, see [changelog](https://github.com/cadamini/cadamini.github.io/blob/main/changelog.md).
 
-## Copyright
+### Theme
 
-Copyright (C) 2019 Sal, https://www.wowthemes.net
-**Mediumish for Jekyll** is designed and developed by [Sal](https://www.wowthemes.net) and it is *free* under MIT license. 
+The page uses the [Mediumish Jekyll theme](https://github.com/wowthemesnet/mediumish-theme-jekyll).
+
+Designed and developed by [Sal from wowthemes.net](https://www.wowthemes.net) - copyright (C) 2019, *free* under MIT license. 
+
+[Mediumish docs](https://bootstrapstarter.com/template-mediumish-bootstrap-jekyll/)
