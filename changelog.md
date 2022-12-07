@@ -1,5 +1,12 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2022 cadamini
+
+- Remove baseurl support in most places and use relative_url
+- Remove comment support, completely remove disqus from code
+- Handle empty tags/categories
+- Remove max from general img width
+
 ## 2019-05-16, v1.0.36
 - docker-composer.yml
 - better responsiveness for 1920x1080 resolution
