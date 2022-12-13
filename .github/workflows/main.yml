@@ -27,4 +27,4 @@ jobs:
         with:
           header: show_checklist
           message: |
-            - [] Checklist item 1
+            - [ ] Checklist item 1
