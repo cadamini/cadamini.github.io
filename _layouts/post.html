@@ -21,7 +21,8 @@ post_class: post-template
             {% if site.adsense == "enabled" %}
             {% include adsense-under-header.html %}
             {% endif %}
-
+            
+            <!-- 
             {% if page.image %}
             {% if site.lazyimages == "enabled" %}
             <img class="featured-image img-fluid lazyimg"
@@ -33,6 +34,7 @@ post_class: post-template
                 page.image | relative_url }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
             {% endif %}
+            --> 
 
             <div class="article-post">
                 {% if page.toc %}
