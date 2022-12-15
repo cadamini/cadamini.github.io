@@ -11,14 +11,18 @@ author: christian
  
 Why articulating a problem instantly helps to solve it - happens to me very often and I feel bad. 
 
-Imagine the following situation at work: 
+## A situation at work
 
 > You: "Can I ask you a question?"  
 > Colleague: "Sure in 15 minutes!"  
-> You: "You can cancel the meeting, I found the solution"  
+> You: "You can cancel the meeting...
+> Colleage: "Ok, but why?"  
+> You: "I found the solution when preparing to explain it to you."  
 
-Why you should not feel bad... 
+## Why you should not feel bad... 
 
 Read more about [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
 
-Photo [Unsplash.com](https://unsplash.com/photos/_WjhfEzRDak)
+---
+
+Post image: [Unsplash.com](https://unsplash.com/photos/_WjhfEzRDak)
