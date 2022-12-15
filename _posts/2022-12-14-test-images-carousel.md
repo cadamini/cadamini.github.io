@@ -3,6 +3,7 @@ layout: post
 title:  "Carousel with test images and link inside each image"
 image: https://t3.ftcdn.net/jpg/01/42/62/84/360_F_142628420_slvDaavEFPE8HKnRc2toe4JWFXLe1DRj.jpg
 description: ""
+categories: [ Stackoverflow ]
 featured: false
 carousels:
   - images: 
