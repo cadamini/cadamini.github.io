@@ -29,7 +29,13 @@
                 </div>
                 {% endif %}
             </h2>
-            <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
+            <h4 class="card-text">
+                {% if post.description %}
+                  {{ post.description }}
+                {% else %}
+                  {{ post.excerpt | strip_html | truncatewords:30 }}
+                {% endif %}
+            </h4>
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
