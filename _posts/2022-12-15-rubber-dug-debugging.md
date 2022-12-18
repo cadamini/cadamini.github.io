@@ -15,13 +15,15 @@ Why articulating a problem instantly helps to solve it - happens to me very ofte
 
 > You: "Can I ask you a question?"  
 > Colleague: "Sure in 15 minutes!"  
-> You: "You can cancel the meeting...
+> You: "You can cancel the meeting...  
 > Colleage: "Ok, but why?"  
 > You: "I found the solution when preparing to explain it to you."  
 
 ## Why you should not feel bad... 
 
-Read more about [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
+> Many programmers have had the experience of explaining a problem to someone else, possibly even to someone who knows nothing about programming, and then hitting upon the solution in the process of explaining the problem. In describing what the code is supposed to do and observing what it actually does, any incongruity between these two becomes apparent.[2] More generally, teaching a subject forces its evaluation from different perspectives and can provide a deeper understanding.[3] 
+
+See [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
 
 ---
 
