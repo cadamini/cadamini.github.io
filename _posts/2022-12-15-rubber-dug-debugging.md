@@ -11,7 +11,7 @@ author: christian
  
 Why articulating a problem can instantly help to solve it?
 
-## Imagine this situation at work
+**Imagine this situation at work:**  
 
 > You: "Can I ask you a question?"  
 > Colleague: "Sure in 15 minutes!"  
