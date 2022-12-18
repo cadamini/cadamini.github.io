@@ -9,9 +9,9 @@ featured: false
 author: christian
 ---
  
-Why articulating a problem instantly helps to solve it - happens to me very often and I feel bad. 
+Why articulating a problem can instantly help to solve it?
 
-## A situation at work
+## Imagine this situation at work
 
 > You: "Can I ask you a question?"  
 > Colleague: "Sure in 15 minutes!"  
@@ -19,7 +19,9 @@ Why articulating a problem instantly helps to solve it - happens to me very ofte
 > Colleage: "Ok, but why?"  
 > You: "I found the solution when preparing to explain it to you."  
 
-## Why you should not feel bad... 
+This happens to me pretty regular when working on code...
+
+## Why you shouldn't feel bad and why it happens?
 
 > Many programmers have had the experience of explaining a problem to someone else, possibly even to someone who knows nothing about programming, and then hitting upon the solution in the process of explaining the problem. In describing what the code is supposed to do and observing what it actually does, any incongruity between these two becomes apparent.[2] More generally, teaching a subject forces its evaluation from different perspectives and can provide a deeper understanding.[3] 
 
