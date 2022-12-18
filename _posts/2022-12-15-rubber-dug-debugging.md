@@ -23,6 +23,8 @@ This happens to me pretty regular when working on code...
 
 ## Why you shouldn't feel bad and why it happens?
 
+A colleague pointed me to a Wikipedia article, an excerpt:
+
 > Many programmers have had the experience of explaining a problem to someone else, possibly even to someone who knows nothing about programming, and then hitting upon the solution in the process of explaining the problem. In describing what the code is supposed to do and observing what it actually does, any incongruity between these two becomes apparent.[2] More generally, teaching a subject forces its evaluation from different perspectives and can provide a deeper understanding.[3] 
 
 See [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
