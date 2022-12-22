@@ -2,6 +2,7 @@
 
 ## 2022 cadamini
 
+- Support of post.description if existing (fallback page.excerpt)
 - Remove baseurl support in most places and use relative_url
 - Remove comment support, completely remove disqus from code
 - Handle empty tags/categories
