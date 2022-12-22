@@ -19,8 +19,7 @@ Check out [existing issues]([https://github.com/cadamini.github.io/issues](https
 3. You can preview your changes locally by running a Jekyll server with `jekyll server`.
 4. Commit the changes once you are happy.
 5. When you're finished with the changes, create a pull request.  
-    If applicable, ínclude the related issue url.
+    If applicable, include the related issue url.
 
-I try to review issues and merge pull requests as soon as possible beside my normal job.
-
-Before I merge a pull request, I may suggest changes or add pull request comments.
+I try to review issues and merge pull requests as soon as possible beside my normal job.  
+Before I merge a pull request, I may suggest changes or add pull request comments.  
