@@ -1,6 +1,6 @@
 # My personal blog
 
-My personal blog where I test out solutions for Jekyll questions on Stackoverflow.
+My personal blog where I test potential solutions for Jekyll-related questions on Stackoverflow.
 
 ## Work in progress
 
