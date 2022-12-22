@@ -8,11 +8,10 @@ At the moment, I am updating the template to my needs, see [changelog](https://g
 
 ## Theme
 
-The page uses the [Mediumish Jekyll theme](https://github.com/wowthemesnet/mediumish-theme-jekyll).
+The page uses the [Mediumish Jekyll theme](https://github.com/wowthemesnet/mediumish-theme-jekyll). Read the 
+[Mediumish docs](https://bootstrapstarter.com/template-mediumish-bootstrap-jekyll/).
 
 Designed and developed by [Sal from wowthemes.net](https://www.wowthemes.net) - copyright (C) 2019, *free* under MIT license. 
-
-[Mediumish docs](https://bootstrapstarter.com/template-mediumish-bootstrap-jekyll/)
 
 ## Contributions
 
