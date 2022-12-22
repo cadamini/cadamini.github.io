@@ -12,7 +12,7 @@ Minor issues, such as typos, can be fixed without a pull request.
 
 Check out [existing issues]([https://github.com/cadamini.github.io/issues](https://github.com/cadamini/cadamini.github.io/issues)). If you find an issue to work on, feel free to open a pull request to fix it.
 
-#### Make changes locally and preview the site
+### Local changes and preview
 
 1. Fork the repository.
 2. Create a working branch and start with your changes!
