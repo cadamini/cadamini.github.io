@@ -1,7 +1,7 @@
 ---
 title: AI-Generated Palettes
 subtitle: Wes Anderson – Kind of Bird
-index: palattes-index
+index: palettes-index
 page_urls: 
   - title: Wes Anderson
     palette: Kind of Bird
@@ -10,3 +10,4 @@ page_urls:
 
 <!-- not flexible yet - use include? -->
 {% include palettes/wes.html %}
+git 
