@@ -2,7 +2,7 @@
 layout: post
 title:  "How can I create a multi-page blog post in Jekyll?"
 image: /assets/images/806.jpg
-description: "A question how to add a links to images in a carousel."
+description: "How to create a multipage blog post with pagination on top and at the bottom for a sample page with separate layouts for subpages."
 categories: [ Jekyll ]
 tags: [ Stackoverflow ]
 featured: false
