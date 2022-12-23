@@ -1,7 +1,7 @@
 ---
 layout: paginated-post-index
 title:  AI-Generated Palettes
-index: index
+index: palattes-index
 page_urls: 
   - title: Wes Anderson
     palette: Kind of Bird

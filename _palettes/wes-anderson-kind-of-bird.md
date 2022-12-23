@@ -1,7 +1,7 @@
 ---
 title: AI-Generated Palettes
 subtitle: Wes Anderson – Kind of Bird
-index: index
+index: palattes-index
 page_urls: 
   - title: Wes Anderson
     palette: Kind of Bird
