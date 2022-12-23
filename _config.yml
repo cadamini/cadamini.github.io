@@ -3,7 +3,7 @@ name: "cadamini.github.io"
 title: "cadamini.github.io"
 description: "Jekyll, Stackoverflow, and tech-related topics."
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
 baseurl: ""
 google_analytics: ''
 mailchimp-list: false
