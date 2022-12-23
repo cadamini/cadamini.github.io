@@ -29,7 +29,7 @@ Jekyll has includes for shared content. The pages share some content in differen
 
 ## Code
 
-[Code (first version)](https://github.com/cadamini/cadamini.github.io/commit/de2921161ad5748c68d99970bf40639245cc5572) (updated index: index to palettes-index laster)
+[Code (first version)](https://github.com/cadamini/cadamini.github.io/commit/de2921161ad5748c68d99970bf40639245cc5572) (updated index: index to palettes-index later)
 
 ## Resulting Jekyll example 
 
