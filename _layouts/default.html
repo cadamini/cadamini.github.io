@@ -43,7 +43,8 @@
 
         <div class="container pr-0">
             <a class="navbar-brand" href="{{ site.baseurl }}/">
-                <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+                <!-- <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> -->
+                <h1 class="sitetitle">{{ site.name }}</h1>
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish"
@@ -58,7 +59,7 @@
                         {% else %}
                     <li class="nav-item">
                         {% endif %}
-                        <a class="nav-link" href="/index.html">Blog</a>
+                        <a class="nav-link" href="/index.html">Startpage</a>
                     </li>
 
                     <li class="nav-item">
@@ -80,7 +81,7 @@
     <div class="site-content">
         <div class="container">
             <div class="mainheading">
-                <h1 class="sitetitle">{{ site.name }}</h1>
+                <!-- <h1 class="sitetitle">{{ site.name }}</h1> -->
                 <p class="lead">
                     {{ site.description }}
                 </p>
