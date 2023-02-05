@@ -21,7 +21,7 @@ post_class: post-template
             {% if site.adsense == "enabled" %}
             {% include adsense-under-header.html %}
             {% endif %}
-            
+
             <!-- 
             {% if page.image %}
             {% if site.lazyimages == "enabled" %}
@@ -34,7 +34,7 @@ post_class: post-template
                 page.image | relative_url }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
             {% endif %}
-            --> 
+            -->
 
             <div class="article-post">
                 {% if page.toc %}
@@ -47,6 +47,26 @@ post_class: post-template
                 </div>
                 {% endif %}
                 {{content}}
+            </div>
+
+            <div class="form-container">
+                <h3>Send feedback!</h3>
+                <form action="https://getform.io/f/acadce28-5a83-40d5-b2cd-9eb413874226" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="(Optional) Enter your name">
+
+                    <label for="message">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="(Optional) Enter your email address">
+
+                    <label for="message">Feedback:</label>
+                    <textarea id="message" name="message"
+                        placeholder="Do you like this post or not? What would you change?"></textarea>
+
+                    <!-- add hidden Honeypot input to prevent spams -->
+                    <input type="hidden" name="_gotcha" style="display:none !important">
+
+                    <button type="submit">Send</button>
+                </form>
             </div>
 
             {% if page.author %}
