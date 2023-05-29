@@ -15,6 +15,11 @@
     object-fit: cover;
 }
 
+section.recent-posts {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+	
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"syntax",
