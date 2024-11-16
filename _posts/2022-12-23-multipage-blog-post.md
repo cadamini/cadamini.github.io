@@ -9,19 +9,19 @@ featured: false
 author: christian
 ---
 
-This [Stackoverflow question](https://stackoverflow.com/questions/74813094/how-can-i-create-a-multi-page-blog-post-in-jekyll/74869733#comment132162516_74869733) was how to create a multipage blog post with pagination on top and at the bottom for a sample page. 
+This [Stackoverflow question](https://stackoverflow.com/questions/74813094/how-can-i-create-a-multi-page-blog-post-in-jekyll/74869733#comment132162516_74869733) asked how to create a multipage blog post with pagination and shared this [sample WordPress page](https://shayallenhill.com/ai-generated-palettes/) with separate subpages. 
 
-Here's the [sample Wordpress blog post page](https://shayallenhill.com/ai-generated-palettes/) with separate subpages. 
+## Approach
 
 I created a new collection, two layouts, and two include files in Jekyll. 
 
 ### Two layouts
 
-Jekyll allows you to add layouts if you HTML structure differs between pages. The page needs two layouts as the startpage differs from all other pages in the site. Each layout contains two for loops to create links to the subpages on top and at the bottom. 
+Jekyll allows you to add layouts if your HTML structure differs between pages. The page needs two layouts as the start page differs from all other pages on the site. Each layout contains two for loops to create links to the subpages on top and at the bottom. 
 
 ### The collection
 
-Jekyll offers posts and collection. In this case, the collection is required to have folder to store pages and to have links to the single pages.
+Jekyll offers posts and collections. In this case, the collection is required to have a folder to store pages and to have links to the single pages.
 
 ### Includes
 
@@ -29,14 +29,11 @@ Jekyll has includes for shared content. The pages share some content in differen
 
 ## Code
 
-[Code (first version)](https://github.com/cadamini/cadamini.github.io/commit/de2921161ad5748c68d99970bf40639245cc5572) (updated index: index to palettes-index later)
+The Stackoverflow answer shares some code, too. You can find all files in GitHub in this [commit](https://github.com/cadamini/cadamini.github.io/commit/de2921161ad5748c68d99970bf40639245cc5572). Note that I updated the index page to palettes-index later.
 
-## Resulting Jekyll example 
+## Jekyll result 
 
-Here's the resulting example using some hacky, not styled, and not optimized. But at least, it should be good to transfer the idea: 
-
-[https://cadamini.github.io/palettes-index/](https://cadamini.github.io/palettes-index/)
-
+This [non-styled example page](https://cadamini.github.io/palettes-index/](https://cadamini.github.io/palettes-index/) should transfer the idea well enough.
 
 ---
 
