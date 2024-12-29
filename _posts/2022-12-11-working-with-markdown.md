@@ -6,7 +6,7 @@ tags: [ Tutorial ]
 image: assets/images/16.jpg
 ---
 
-This posts contains useful markdown syntax that will help you some time in the future. The examples are not displayed in HTML but Markdown because I use `~~~` around them. 
+This post contains useful markdown syntax that will help you  in the future. The examples are not displayed in HTML but Markdown because I use `~~~` around them. 
 
 ## Headings
 
