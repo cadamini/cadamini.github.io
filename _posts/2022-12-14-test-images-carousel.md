@@ -15,13 +15,11 @@ carousels:
       url: https://www.12345.com
 ---
 
-For [this Stackoverflow question](https://stackoverflow.com/questions/74782155/add-links-to-jekyll-slider-carousel-for-github-pages/74790606?noredirect=1#comment132027196_74790606), I have had the chance to test a [Jekyll image carousel](https://jekyllcodex.org/without-plugin/slider/#) from jekyllcodex.org.
+To answer [this Stackoverflow question](https://stackoverflow.com/questions/74782155/add-links-to-jekyll-slider-carousel-for-github-pages/74790606?noredirect=1#comment132027196_74790606) (can links be added to the single images of the carousel?) I tested the [Jekyll image carousel](https://jekyllcodex.org/without-plugin/slider/#) from jekyllcodex.org.
 
-The code is adding the carousel below. 
+This code is adding the carousel: 
 
-{% include carousel.html height="50" unit="%" duration="7" number="1" %}
-
-The question was whether and how it's possible to add links to the single images.
+`{% include carousel.html height="50" unit="%" duration="7" number="1" %}`
 
 ## Page front matter adjustment
 
