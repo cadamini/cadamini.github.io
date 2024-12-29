@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Including a link tag in the front matter"
+title:  "Link tag inside front matter"
 image: https://cdn-icons-png.flaticon.com/512/3858/3858629.png
 categories: [ Jekyll ]
 tags: [ Stackoverflow ]
@@ -9,7 +9,7 @@ author: christian
 banner-bottom: This is a [Link to this post]({% link _posts/2022-12-12-flatify-link-from-a-Jekyll-link-tag-in-frontmatter.md %}) using a Jekyll link tag in the page's front matter.
 ---
 
-For [this Stackoverflow question](https://stackoverflow.com/questions/74776719/jekyll-link-inside-a-variable-called-from-a-markdown-file/74777614#74777614), I could add ansnwer because I have found this [blog post](http://acegik.net/blog/ruby/jekyll/plugins/howto-nest-liquid-template-variables-inside-yaml-front-matter-block.html) some time ago. The question was how to add a link inside a variable in the front matter.
+I could answer [this Stackoverflow question](https://stackoverflow.com/questions/74776719/jekyll-link-inside-a-variable-called-from-a-markdown-file/74777614#74777614) (how to add a link inside a variable in the front matter) because I had found this [blog post](http://acegik.net/blog/ruby/jekyll/plugins/howto-nest-liquid-template-variables-inside-yaml-front-matter-block.html) before.
 
 ## 1. Create a filter plugin
 
