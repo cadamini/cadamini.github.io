@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify Callback</title>
+</head>
+<body>
+  <h1>Spotify Authorization Complete</h1>
+  <p id="output">Looking for code...</p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+
+    if (code) {
+      document.getElementById('output').innerHTML = `
+        ✅ <strong>Authorization code received:</strong><br>
+        <pre>${code}</pre>
+        <p>Copy this code and paste it into your Ruby script.</p>
+      `;
+    } else {
+      document.getElementById('output').textContent = '❌ No code found in the URL.';
+    }
+  </script>
+</body>
+</html>
