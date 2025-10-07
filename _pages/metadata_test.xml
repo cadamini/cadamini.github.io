@@ -1,3 +1,9 @@
+---
+layout: page
+title: metadata_test
+permalink: /metadata_test
+---
+
 <EntityDescriptor entityID="urn:dev-6zj8ba0jgmqjm560.us.auth0.com" xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
   <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
     <KeyDescriptor use="signing">
