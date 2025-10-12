@@ -8,26 +8,100 @@ comments: test page
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Spotify Callback</title>
+    <meta charset="UTF-8">
+    <title>Callback URL for OAuth</title>
+    <style>
+        /* Simple styling for the code block and button for better visibility */
+        .code-container {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between code and button */
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            flex-grow: 1; /* Allows the code block to take up available space */
+            overflow-x: auto; /* Handles long codes */
+            white-space: pre-wrap; /* Ensures text wraps if needed */
+        }
+        .copy-button {
+            padding: 8px 12px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+        .copy-button:hover {
+            background-color: #ddd;
+        }
+    </style>
 </head>
 <body>
-  <h1>Spotify Authorization Complete</h1>
-  <p id="output">Looking for code...</p>
+    <h1>Spotify Authorization Complete</h1>
+    <p id="output">Looking for code...</p>
 
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const code = params.get('code');
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get('code');
 
-    if (code) {
-      document.getElementById('output').innerHTML = `
-        ✅ <strong>Authorization code received:</strong><br>
-        <pre>${code}</pre>
-        <p>Copy this code and paste it into your Ruby script.</p>
-      `;
-    } else {
-      document.getElementById('output').textContent = '❌ No code found in the URL.';
-    }
-  </script>
+        // Function to copy the text from the <pre> element
+        function copyCode() {
+            // 1. Get the <pre> element
+            const codeElement = document.getElementById('authCode');
+            if (!codeElement) return; // Exit if element not found
+
+            // 2. Use the modern Clipboard API (preferred method)
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(codeElement.textContent)
+                    .then(() => {
+                        alert('✅ Authorization code copied to clipboard!');
+                    })
+                    .catch(err => {
+                        console.error('Could not copy text: ', err);
+                        // Fallback in case of error
+                        fallbackCopyTextToClipboard(codeElement);
+                    });
+            } else {
+                // Fallback for older browsers
+                fallbackCopyTextToClipboard(codeElement);
+            }
+        }
+
+        // Fallback function using document.execCommand
+        function fallbackCopyTextToClipboard(codeElement) {
+            let range = document.createRange();
+            range.selectNode(codeElement); // Selects the content of the <pre>
+            window.getSelection().removeAllRanges(); // Clear previous selections
+            window.getSelection().addRange(range); // Select the text
+
+            try {
+                const successful = document.execCommand('copy');
+                const msg = successful ? 'successful' : 'unsuccessful';
+                if (successful) {
+                    alert('✅ Authorization code copied to clipboard! (Fallback method)');
+                } else {
+                    alert('❌ Copy failed using fallback method.');
+                }
+            } catch (err) {
+                console.error('Fallback copy failed: ', err);
+                alert('❌ Copy failed: please copy the code manually.');
+            }
+
+            window.getSelection().removeAllRanges(); // Deselect the text
+        }
+
+        if (code) {
+            document.getElementById('output').innerHTML = `
+                ✅ <strong>Authorization code received:</strong><br>
+                <div class="code-container">
+                    <pre id="authCode">${code}</pre>
+                    <button class="copy-button" onclick="copyCode()">Copy</button>
+                </div>
+                <p>Copy this code and paste it into your Ruby script.</p>
+            `;
+        } else {
+            document.getElementById('output').textContent = '❌ No code found in the URL.';
+        }
+    </script>
 </body>
 </html>
